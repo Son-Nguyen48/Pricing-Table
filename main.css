@@ -48,7 +48,7 @@ html {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   gap: 4rem;
   max-width: 90rem;
   margin: 0 auto;
