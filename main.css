@@ -149,12 +149,13 @@ h3 p {
   background-image: url("./img/newmark.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 80%;
   position: absolute;
   width: 6.4rem;
   height: 6.4rem;
   top: 0;
   left: 0;
-  transform: translate(-30%, -30%);
+  transform: translate(-28%, -28%);
   color: #fff;
   display: flex;
   justify-content: center;
