@@ -14,9 +14,10 @@ a {
   margin-bottom: 3.2rem;
   font-size: 1.9rem;
   letter-spacing: 0.1rem;
-  line-height: 5.4rem;
+  line-height: 5rem;
   font-weight: 300;
   font-family: "Montserrat";
+  transition: all 0.3s ease;
 }
 .ocean a {
   border: 0.2rem solid rgb(33, 172, 182);
@@ -37,14 +38,8 @@ a:hover {
   border: rgb(131, 9, 110) 0.2rem solid;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   background-color: rgb(230, 219, 219);
-  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -53,22 +48,23 @@ html {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(36.2rem, 1fr));
   max-width: 120rem;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 .item {
+  width: 36.2rem;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 12rem;
   margin-bottom: 8rem;
-  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   background-color: #fff;
   color: #879187;
+  margin: 12rem auto;
 }
 
 .item .des > p {
@@ -122,7 +118,6 @@ h3 p {
   align-items: center;
   color: #fff;
   background-image: url("./img/ocean.png");
-  background-position: center;
 }
 
 .mountants h2 {
@@ -132,7 +127,6 @@ h3 p {
   align-items: center;
   color: #fff;
   background-image: url("./img/mountain.png");
-  background-position: center;
 }
 
 .mountants h2 p {
@@ -150,7 +144,6 @@ h3 p {
   align-items: center;
   color: #fff;
   background-image: url("./img/forest.png");
-  background-position: center;
 }
 
 .ocean {
