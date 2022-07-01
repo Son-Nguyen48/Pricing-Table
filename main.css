@@ -8,7 +8,7 @@
 a {
   text-decoration: none;
   display: inline-block;
-  width: 50%;
+  width: 46.9%;
   margin: 0 auto;
   background-color: transparent;
   margin-bottom: 3.2rem;
@@ -21,6 +21,12 @@ a {
 }
 .ocean a {
   border: 0.2rem solid rgb(33, 172, 182);
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 54px;
+  color: #2195f7;
+  font-weight: 300;
+  font-family: "Montserrat";
 }
 
 .mountants a {
@@ -28,6 +34,12 @@ a {
 }
 
 .forest a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 54px;
+  color: #31ad1d;
+  font-weight: 300;
+  font-family: "Montserrat";
   border: 0.2rem solid rgb(16, 155, 28);
 }
 
@@ -56,6 +68,7 @@ html {
 
 .item {
   width: 36.2rem;
+  /* min-width: 100%; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -84,8 +97,19 @@ html {
   margin-bottom: 5rem;
 }
 
-h2 {
+.hero {
   height: 27.2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  position: relative;
+  color: #ffffff;
+  font-size: 3.6rem;
+  text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
@@ -109,21 +133,24 @@ h3 p {
   font-family: "Source Sans Pro";
 }
 
-.ocean h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.hero::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.ocean .hero::before {
   background-image: url("./img/ocean.png");
 }
 
-.mountants h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+.mountants .hero::before {
   background-image: url("./img/mountain.png");
 }
 
@@ -135,12 +162,7 @@ h3 p {
   font-family: "Source Sans Pro";
 }
 
-.forest h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+.forest .hero::before {
   background-image: url("./img/forest.png");
 }
 
