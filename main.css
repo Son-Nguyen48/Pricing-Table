@@ -59,6 +59,7 @@ a:hover {
   max-width: 120rem;
   margin: 0 auto;
   gap: 2em;
+  padding-top: 12rem;
 }
 
 .item {
@@ -68,7 +69,7 @@ a:hover {
   flex-direction: column;
   background-color: #fff;
   color: #879187;
-  margin: 12rem auto;
+  margin: 0 auto 12rem auto;
 }
 
 .item .des > p {
@@ -205,6 +206,7 @@ h3 p {
 .forest .price p {
   color: #99a9b5;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .price {
